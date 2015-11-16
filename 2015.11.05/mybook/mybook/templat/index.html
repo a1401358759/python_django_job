@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hello</title>
+    </head>
+    <body>
+        <span>数量是</span>  {{ a }}
+        <br/>
+        {% for i in b %}
+            {{ i.name }}
+            {{ i.gender }}
+            {{ i.age }}
+            {{ i.email }}
+            {{ i.phone }}
+            <br/>
+        {% endfor %}
+    </body>
+</html>
