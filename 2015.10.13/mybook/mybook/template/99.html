@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+{% for i in num_list %}
+    <br>
+    {% for j in num_list %}
+        {% if j <= i %}
+            {{ j }}*{{ i }}=
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+
+
+</body>
+</html>

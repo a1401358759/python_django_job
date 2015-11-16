@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<style>
+li {list-style: none;}
+a {text-decoration: none; color: red; border-left: 1px black solid; float: left;}
+</style>
+</head>
+<body>
+<p>{{ student.name }} is {{ student.age }} years old</p>
+<p>he like:</p>
+<ul>
+{% for fruit in favorite_fruit %}
+    <li><a href="#">{{ fruit }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    {% for i in num_list %}
+        <p>{{ i }}</p>
+    {% empty %}
+        <p>this list is empty</p>
+    {% endfor %}
+</body>
+</html>
