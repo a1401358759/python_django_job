@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        奢侈品大全
+    </title>
+</head>
+<body>
+    <table>
+        {% for i in cont %}
+            <tr>
+                <td>
+                    {{ i.name }}
+                </td>
+                <td>
+                    {{ i.price }}
+                </td>
+                <td>
+                    <img src="/static/{{ i.photo }}">
+                </td>
+                <td>
+                    {{ i.brand }}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
