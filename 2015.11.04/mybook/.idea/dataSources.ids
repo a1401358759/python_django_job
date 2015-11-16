@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Django default" product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="20a01d11-bf23-49e4-83d1-7ac5f285261a">
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:E:\python_django_job\2015.11.04\mybook\db.sqlite3</jdbc-url>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/.PyCharm30/config/jdbc-drivers/xerial-sqlite-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/.PyCharm30/config/jdbc-drivers/sqlite-jdbc-3.8.9.jar</url>
+      </library>
+    </libraries>
+    <schema name="" catalog=""/>
+    <table name="auth_group" schema="" catalog="" type="TABLE"/>
+    <table name="auth_group_permissions" schema="" catalog="" type="TABLE"/>
+    <table name="auth_permission" schema="" catalog="" type="TABLE"/>
+    <table name="auth_user" schema="" catalog="" type="TABLE"/>
+    <table name="auth_user_groups" schema="" catalog="" type="TABLE"/>
+    <table name="auth_user_user_permissions" schema="" catalog="" type="TABLE"/>
+    <table name="book_child" schema="" catalog="" type="TABLE"/>
+    <table name="book_mother" schema="" catalog="" type="TABLE"/>
+    <table name="book_student" schema="" catalog="" type="TABLE"/>
+    <table name="book_student_teacher" schema="" catalog="" type="TABLE"/>
+    <table name="book_teacher" schema="" catalog="" type="TABLE"/>
+    <table name="django_admin_log" schema="" catalog="" type="TABLE"/>
+    <table name="django_content_type" schema="" catalog="" type="TABLE"/>
+    <table name="django_migrations" schema="" catalog="" type="TABLE"/>
+    <table name="django_session" schema="" catalog="" type="TABLE"/>
+    <table name="sqlite_sequence" schema="" catalog="" type="TABLE"/>
+  </data-source>
+</component>
