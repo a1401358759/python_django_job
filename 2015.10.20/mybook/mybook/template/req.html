@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my request</title>
+</head>
+<body>
+<!--{{ request }}-->
+{{ request.path }}
+<br>
+{{ request.get_host }}
+<br>
+{{ request.get_full_path }}
+<br>
+{{ request.is_secure }}
+<br>
+<!--{{ request.META }}-->
+<br>
+{{ request.GET }}
+<br>
+{{ request.POST }}
+<br>
+#########################################################
+<table>
+    {% for i,j in content %}
+        <tr>
+            <td>
+                {{ i }}
+            </td>
+            <td>
+                {{ j }}
+            </td>
+        </tr>
+
+    {% endfor %}
+</table>
+
+</body>
+</html>
