@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<p>
+{{ content }}
+</p>
+
+{% for i in content %}
+    <p> {{ i.id }} {{ i.name }} {{ i.age }} {{ i.gender }} {{ i.phone }} {{ i.grade }} </p>
+{% endfor %}
+</body>
+</html>
