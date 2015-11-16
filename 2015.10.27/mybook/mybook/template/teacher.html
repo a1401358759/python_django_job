@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>teacher_card</title>
+    <style>
+        table img{width: 70px;height: 90px;}
+    </style>
+</head>
+<body>
+    {% for i in content %}
+        <table>
+            <tr>
+                <td>
+                    <img src="/static/{{i.photo}}"
+                </td>
+                <td>
+                    <table border="1px solid black" style="border-collapse: collapse">
+                        <tr>
+                            <th>
+                                姓名
+                            </th>
+                            <th>
+                                {{i.name}}
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                 年龄
+                            </th>
+                            <th>
+                                {{i.age}}
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                 科目
+                            </th>
+                            <th>
+                                {{i.project}}
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                住址
+                            </th>
+                            <th>
+                                {{i.address}}
+                            </th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    {% endfor %}
+</body>
+</html>
