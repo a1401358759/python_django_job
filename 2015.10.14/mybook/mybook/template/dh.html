@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        导航
+    </title>
+    <style>
+        li {list-style: none;}
+        a {text-decoration: none; color: red; border-left: 1px black solid; float: left; padding-left: 12px;padding-right: 12px;}
+    </style>
+
+</head>
+<body>
+    <div class="dh">
+        <ul>
+            {% for dh in dh_list %}
+                <li>
+                    {% if forloop.first %}
+                        <a href="#" style="border: none;"> {{ dh }}</a>
+                        <p>{{ forloop }}</p>
+                    {% else %}
+                        <a href="#"> {{ dh }}</a>
+                        <p>{{ forloop }}</p>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

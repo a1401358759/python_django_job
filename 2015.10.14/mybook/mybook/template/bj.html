@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+{% ifequal a 1 %}
+     等于
+{% else %}
+    不等于
+{% endifequal %}
+<ul>
+{% for i in num %}
+    {% ifequal i 50 %}
+        <li>i == 50</li>
+    {% else %}
+        <li>i</li>
+    {% endifequal %}
+{% endfor %}
+</ul>
+</body>
+</html>

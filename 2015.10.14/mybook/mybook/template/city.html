@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <table>
+        {% for city in country.values %}
+            <tr>
+                    <td>
+                        {{ forloop }}
+                    </td>
+                {% for i in city %}
+                    <td>
+                        <p>{{ i }}</p>
+                        <p>{{ forloop.parentloop }}</p>
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
