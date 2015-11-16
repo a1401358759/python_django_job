@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           {{ phone.gmm.name }}'s and {{ phone.xtl.name }}'s phone number
+        </title>
+    </head>
+    <body>
+    {{ phone.gmm.name }}'s phone number
+        {% for i in phone.gm_phone %}
+            <h1>
+                {{ i.phone_number }}
+            </h1>
+        {% endfor %}
+    {{ phone.xtl.name }}'s phone number
+        {% for i in phone.xt_phone %}
+            <h1>
+                {{ i.phone_number }}
+            </h1>
+        {% endfor %}
+
+    </body>
+</html>
