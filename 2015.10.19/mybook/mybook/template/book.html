@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>新书排行</title>
+<style type="text/css">
+td {
+    border:1px black solid;
+    padding:3px;
+}
+table {
+    border-collapse: collapse;
+    }
+th {
+    border:1px black solid;
+}
+</style>
+</head>
+<body>
+    <h1>某点全年十大新书排行榜</h1>
+    <table>
+        <tr>
+            <th>
+                书名
+            </th>
+
+            <th>
+                作者
+            </th>
+
+            <th>
+                出版社
+            </th>
+        </tr>
+        {% for book in book_list %}
+        <tr>
+            <td>
+                《{{ book.name }}》
+            </td>
+
+            <td>
+                {{ book.author }}
+            </td>
+
+            <td>
+                {{ book.publisher }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
