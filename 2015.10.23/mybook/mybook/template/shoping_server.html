@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>shopping server</title>
+    <style>
+    .errorlist li {
+        font-size:1000px;
+        color: brown;
+    }
+    </style>
+</head>
+<body>
+<form action="" method="post">
+
+{{ shopping.as_p }}
+<input type="submit" value="submit">
+</form>
+<ul class="errorlist">
+{% for i in shopping.errors %}
+    <li>
+    i
+    </li>
+{% endfor %}
+</ul>
+</body>
+</html>
