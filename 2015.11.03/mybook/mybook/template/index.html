@@ -1,0 +1,31 @@
+{% load laobian %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            index
+        </title>
+    </head>
+    <body>
+        {{ name|replace:'A' }}
+        {{ name|lower }}
+
+        <p>The time is {% hello "%Y-%m-%d %I:%M %p" %}.</p>
+
+        <p>The time is {% hei "%Y-%m-%d %I:%M %p"  %}.</p>
+            {{ createtime }}
+        <p>The time is {% hi "%Y-%m-%d %I:%M %p" as h %}.</p>
+            {{ createtime }}
+        {% nice %}
+            <p>hello</p>
+        {% endnice %}
+        {% upper %}
+            {{ name }}
+        {% endupper %}
+        {% current_time  "%Y-%m-%d %I:%M %p" %}
+        {% ll 'hello' %}
+        <br>
+        {% books_for_author author %}
+
+    </body>
+</html>
