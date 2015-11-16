@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+</head>
+<body>
+    hello {{ name|safe }}
+    {% autoescape off %}
+        {{ name }}
+    {% endautoescape %}
+</body>
+</html>
