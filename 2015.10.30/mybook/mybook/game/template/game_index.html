@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>
+        {{ message }}
+    </h1>
+    {% for i in game %}
+       <p>
+            {{ i.id }} {{ i.title }} {{ i.types }}
+       </p>
+    {% endfor %}
+    {% for i in player %}
+        <p>
+            {{ i.id }} {{ i.name }} {{ i.paiming }}
+        </p>
+    {% endfor %}
+</body>
+</html>
